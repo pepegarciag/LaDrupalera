@@ -22,4 +22,9 @@ class LaDrupaleraController extends Controller
     {
         return response()->json(Post::all());
     }
+
+    public function ladrupalera()
+    {
+        return view('ladrupalera.index');
+    }
 }

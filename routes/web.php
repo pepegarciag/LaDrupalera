@@ -10,4 +10,5 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
-$app->get('/ladrupalera', ['middleware' => 'cors', 'uses' => 'LaDrupaleraController@posts']);
+$app->get('/posts', ['middleware' => 'cors', 'uses' => 'LaDrupaleraController@posts']);
+$app->get('/ladrupalera', ['middleware' => 'cors', 'uses' => 'LaDrupaleraController@ladrupalera']);
