@@ -11,8 +11,8 @@
     <div class="bg"></div>
     <div class="container">
         <figure class="card">
-            <img src="dev.png" alt="profile-sample" class="background"/>
-            <img src="dev.png" alt="profile-sample" class="profile"/>
+            <img src="/dev.png" alt="profile-sample" class="background"/>
+            <img src="/dev.png" alt="profile-sample" class="profile"/>
             <figcaption>
                 <a href="" id="title" target="_blank">......</a>
                 <div class="icons">
