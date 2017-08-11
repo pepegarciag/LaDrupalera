@@ -52,7 +52,7 @@ class Bea extends Command
      * @var string
      */
     protected $paths = [
-        'drupal/snippet', 
+        'drupal/snippet',
         'drupal/consultoria',
         'drupal/desarrollo',
         'drupal/comunidad-drupal',
@@ -103,7 +103,7 @@ class Bea extends Command
      * @return void
      */
     private function fetchPage($url)
-    {    
+    {
         // Check if we should query for pages
         $query = ($this->page == 0) ? '' : "?page={$this->page}";
         // Perform request.
@@ -115,7 +115,7 @@ class Bea extends Command
         // doesn't exists and it is a 404 so we stop requesting posts.
         if ($this->checkPage($posts)) {
             $posts->each(function($node, $i) {
-                $this->info($node->text());
+                $this->info("\"" . $node->text() . "\"," . $node->link()->getUri());
             });
 
             $this->page++;
